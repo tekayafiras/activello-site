@@ -7,32 +7,28 @@
     <title>activello</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <!-- <link rel="shortcut icon" href="resources/favicon.ico" > -->
     
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0a28f862a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
+            
             <div class="nav">
-                <ul>
-                    <li><a href="#">HOME</a></li>
+                <div class="hamburger-container">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="mobile-nav">
+                    <li><a class="active-nav" href="#">HOME</a></li>
                     <li class="after"><a href="#">ABOUT THE TESTS  <i class="fas fa-chevron-down"></i></a>
                         <ul class="inside-nav">
                             <li><a href="">Page Markup and Formatting</a></li>
@@ -50,7 +46,7 @@
                     </li>
                     <li><a href="#">SHOP</a></li>
                 </ul>
-                <div>
+                <div class="search-nav">
                     <input type="text" placeholder="Search">
                     <i class="fas fa-search"></i>
                 </div>
@@ -64,13 +60,13 @@
         </section>
 
         <div class="carousel ">
-            <button class="carousel-button left">
+            <button  class="carousel-button-left carousel-button left is-hidden">
                 <i class="fas fa-chevron-left fa-2x"></i>
             </button>
 
             <div class="carousel-container">
                 <ul class="carousel-track">
-                    <li class="carousel-slide current">
+                    <li class="carousel-slide current-slide">
                         <div class="definition">
                             <div class="inside">
                                 <h5 class="border-bottom-1"><a href="#">TEMPLATE</a></h5>
@@ -118,12 +114,12 @@
                 </ul>
             </div>
 
-            <button class="carousel-button right">
+            <button class=" carousel-button-right carousel-button right">
                 <i class="fas fa-chevron-right fa-2x"></i>
             </button>
 
             <div class="carousel-nav">
-                <button class="carousel-indicator current-indicator">  
+                <button class="carousel-indicator current-slide">  
                 </button>
                 <button class="carousel-indicator">
                 </button>
