@@ -33,8 +33,21 @@
             <div class="nav">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT THE TESTS  <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="#">LEVEL 1 <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="after"><a href="#">ABOUT THE TESTS  <i class="fas fa-chevron-down"></i></a>
+                        <ul class="inside-nav">
+                            <li><a href="">Page Markup and Formatting</a></li>
+                            <li><a href="#">Vleaning Floats</a></li>
+                            <li><a href="#">Page with comments</a></li>
+                            <li><a href="#">Page with comments disabled</a></li>
+                            <li><a href="#">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="after"><a href="#">LEVEL 1 <i class="fas fa-chevron-down"></i></a>
+                        <ul class="inside-nav inside-nav-2">
+                            <li><a href="#">Level 2</a></li>
+                            <li><a href="#">Level 3</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">SHOP</a></li>
                 </ul>
                 <div>
@@ -143,7 +156,83 @@
                     </div>
                     
                 </div>
-
+                <div class="grid-main-1">
+                    <div class="grid-main1-container">
+                        <a class="border-bottom" href=""><h5>POST FORMATS</h5></a>
+                        <a href=""><h2>Post Format: Gallery</h2></a>
+                        <a href=""><p>Posted on february 22, 2021 by Tekaya </p></a>
+                    </div>
+                    
+                    <a class="hovereffect" href="#"><img src="resources/secondpic in main.jpg" alt=""></a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla ex non sapiente ipsum commodi harum soluta. Doloremque quos in officia dicta perferendis!. </p>
+                    <div>
+                        <h5 class="border-2"><a href="#">READ MORE</a></h5>
+                    </div>
+                    
+                </div>
+                <div class="grid-main-3">
+                    <div class="griditem">
+                        <div class="grid-main-1">
+                            <div class="grid-main1-container">
+                                <a class="border-bottom" href=""><h5>TEMPLATE</h5></a>
+                                <a href=""><h2>Post Format: Gallery</h2></a>
+                                <a href=""><p>Posted on february 22, 2021 by Tekaya </p></a>
+                            </div>
+                            
+                            <a class="hovereffect" href="#"><img src="resources/carousel/2.jpg" alt=""></a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla ex non sapiente ipsum commodi harum soluta. Doloremque quos in officia dicta perferendis!. </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="griditem">
+                        <div class="grid-main-1">
+                            <div class="grid-main1-container">
+                                <a class="border-bottom" href=""><h5>TEMPLATE</h5></a>
+                                <a href=""><h2>Post Format: Gallery</h2></a>
+                                <a href=""><p>Posted on february 22, 2021 by Tekaya </p></a>
+                            </div>
+                            
+                            <a class="hovereffect" href="#"><img src="resources/carousel/1.jpg" alt=""></a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla ex non sapiente ipsum commodi harum soluta. Doloremque quos in officia dicta perferendis!. </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="griditem">
+                        <div class="grid-main-1">
+                            <div class="grid-main1-container">
+                                <a class="border-bottom" href=""><h5>TEMPLATE</h5></a>
+                                <a href=""><h2>Template: Featured Image (No sidebar layout)</h2></a>
+                                <a href=""><p>Posted on february 22, 2021 by Tekaya </p></a>
+                            </div>
+                            
+                            <a class="hovereffect" href="#"><img src="resources/carousel/5.jpg" alt=""></a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla ex non sapiente ipsum commodi harum soluta. Doloremque quos in officia dicta perferendis!. </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="griditem">
+                        <div class="grid-main-1">
+                            <div class="grid-main1-container">
+                                <a class="border-bottom" href=""><h5>TEMPLATE</h5></a>
+                                <a href=""><h2>Post Format: Gallery</h2></a>
+                                <a href=""><p>Posted on february 22, 2021 by Tekaya </p></a>
+                            </div>
+                            
+                            <a class="hovereffect" href="#"><img src="resources/carousel/3.jpg" alt=""></a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla ex non sapiente ipsum commodi harum soluta. Doloremque quos in officia dicta perferendis!. </p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="lastdivinmain">
+                    <h5><a class="violeteffect" href="">OLDER_POSTS</a></h5>
+                    <h5><a class="violeteffect" href="">NEWER_POSTS</a></h5>
+                </div>
+                
             </div>
             <div class="grid-side">
                 <div class="about">
@@ -153,7 +242,7 @@
                 </div>
                 <div class="follow">
                     <h4 class="border-bottom-left">FOLLOW ME</h4>
-                    <ul>
+                    <ul class="socialmedia">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href=""><i class="fab fa-youtube"></i></a></li>
@@ -189,10 +278,68 @@
                     
                     </div>
                 </div>
+                
+                <div class="search">
+                    <input class="search-bar" type="text" placeholder="Search...">
+                    <input class="search-button" type="submit" value="SEARCH">
+                </div>
+
+                <div class="categories ">
+                    <h4 class="border-bottom-left">CATEGORIES</h4>
+                    <div class="categories-container">
+
+                        <div class="flex-categories">
+                            <a  href="">
+                                <h5 class='violeteffect'>Post Formats</h5>
+                            </a>
+                            <p>11</p>
+                        </div>
+                        <div class="flex-categories">
+                            <a  href="">
+                                <h5 class='violeteffect'>Template</h5>
+                            </a>
+                            <p>5</p>
+                        </div>
+                        <div class="flex-categories">
+                            <a  href="">
+                                <h5 class='violeteffect'>Cat A</h5>
+                            </a>
+                            <p>3</p>
+                        </div>
+                        <div class="flex-categories">
+                            <a  href="">
+                                <h5 class='violeteffect'>Edge Case</h5>
+                            </a>
+                            <p>3</p>
+                        </div>
+                        <div class="flex-categories">
+                            <a  href="">
+                                <h5 class='violeteffect'>Cat B</h5>
+                            </a>
+                            2
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </main>
+    
+    <footer>
+        <div class="footer">
+            
+                <ul class="socialmedia">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-google"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+                <p>firas ben tekaya : web developer student. this theme powerder by Colorlib Activello </p>
+                
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
