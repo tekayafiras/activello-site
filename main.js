@@ -117,12 +117,17 @@ slides.forEach(setSlidePosition);
     const hamburger = document.querySelector('.hamburger-container');
     const mobileNav = document.querySelector('.nav ul');
     const close = document.querySelector('.close');
+    const link = document.querySelector('.nav li');
 
     hamburger.addEventListener('click',e=>{
         mobileNav.classList.toggle('close');
         hamburger.classList.toggle('hamburgerhover');
         hamburger.classList.toggle('hamburger-anime');
         mobileNav.classList.toggle('mask');
+        
+            
+        // link.classList.toggle('fade');
+        
 
     });
 
