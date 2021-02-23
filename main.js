@@ -115,13 +115,14 @@ slides.forEach(setSlidePosition);
     });
 
     const hamburger = document.querySelector('.hamburger-container');
-    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileNav = document.querySelector('.nav ul');
     const close = document.querySelector('.close');
 
     hamburger.addEventListener('click',e=>{
         mobileNav.classList.toggle('close');
         hamburger.classList.toggle('hamburgerhover');
-        hamburger.classList.toggle('hamburger-anime')
+        hamburger.classList.toggle('hamburger-anime');
+        mobileNav.classList.toggle('mask');
 
     });
 
