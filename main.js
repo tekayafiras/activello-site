@@ -86,6 +86,7 @@ slides.forEach(setSlidePosition);
     });
 
 
+    
 
 
 
@@ -94,25 +95,31 @@ slides.forEach(setSlidePosition);
     const right = document.querySelector('.right');
     const left = document.querySelector('.left');
 
-    carousel.addEventListener('mouseenter',()=>{
-        right.style.transform ='translateX('+50+'px)';
-        right.style.opacity ='1';
-    });
-    carousel.addEventListener('mouseleave',()=>{
+    if(screen.width > 820){
+        carousel.addEventListener('mouseenter',()=>{
+            right.style.transform ='translateX('+50+'px)';
+            right.style.opacity ='1';
+        });
+        carousel.addEventListener('mouseleave',()=>{
+            
+            right.style.transform ='translateX('+00+'px)';
+            right.style.opacity ='0';
+        });
+    
+    
+        carousel.addEventListener('mouseenter',()=>{
+            left.style.transform ='translateX(-'+50+'px)';
+            left.style.opacity ='1';
+        });
+        carousel.addEventListener('mouseleave',()=>{
+            left.style.transform ='translateX(-'+00+'px)';
+            left.style.opacity ='0';   
+        });
         
-        right.style.transform ='translateX('+00+'px)';
-        right.style.opacity ='0';
-    });
+    
+    }
 
 
-    carousel.addEventListener('mouseenter',()=>{
-        left.style.transform ='translateX(-'+50+'px)';
-        left.style.opacity ='1';
-    });
-    carousel.addEventListener('mouseleave',()=>{
-        left.style.transform ='translateX(-'+00+'px)';
-        left.style.opacity ='0';   
-    });
 
     const hamburger = document.querySelector('.hamburger-container');
     const mobileNav = document.querySelector('.nav ul');
