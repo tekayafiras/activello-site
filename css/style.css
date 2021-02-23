@@ -250,7 +250,6 @@ header .nav{
     cursor: pointer;
     border: 2px solid white;
     margin: 0 .2rem;
-    transition: all .45s ease;
 }
 .current-slide{
     background: white;

@@ -111,19 +111,27 @@ slides.forEach(setSlidePosition);
     });
     carousel.addEventListener('mouseleave',()=>{
         left.style.transform ='translateX(-'+00+'px)';
-        left.style.opacity ='0';
-            
-        
-        
+        left.style.opacity ='0';   
     });
 
     const hamburger = document.querySelector('.hamburger-container');
     const mobileNav = document.querySelector('.mobile-nav');
+    const close = document.querySelector('.close');
 
     hamburger.addEventListener('click',e=>{
-        mobileNav.style.transform ='translateY('+0+'px';
-        mobileNav.style.opacity='1';
+        mobileNav.classList.toggle('close');
+        hamburger.classList.toggle('hamburgerhover');
+        hamburger.classList.toggle('hamburger-anime')
+
     });
+
+
+    // hamburger.addEventListener('mouseenter',()=>{
+    //     hamburger.style.background='red';
+    // });
+    // hamburger.addEventListener('mouseleave',()=>{
+    //     hamburger.style.background='transparent';
+    // });
     
 
     
