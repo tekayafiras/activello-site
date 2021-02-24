@@ -1,0 +1,30 @@
+.grid-main h1{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+    font-family:sans-serif;
+    padding-bottom: 2rem;
+}
+.grid-main h2{
+    font-weight: 700;
+    padding: 2.5rem 0;
+}
+.grid-main span{
+    cursor: pointer;
+    color: rgb(80, 79, 79);
+}
+ol{
+    list-style: lower-alpha;
+    padding-left: 2rem;
+}
+.grid-main li{
+    line-height: 1.6rem;
+}
+section{
+    max-width: 1100px;
+    margin: auto;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+main{
+    padding-top: 6rem;
+}

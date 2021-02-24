@@ -546,3 +546,16 @@ footer{
     padding: 0 2rem;
 }
 
+
+
+
+.hide{
+    opacity:0.3;	
+    transform : translateY(100px);
+    }
+
+.show {
+    visibility:visible;
+    opacity:1;
+    transform : translateY(0px);
+}
