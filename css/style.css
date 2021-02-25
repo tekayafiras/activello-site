@@ -550,12 +550,14 @@ footer{
 
 
 .hide{
-    opacity:0.3;	
-    transform : translateY(100px);
-    }
+    visibility: none;
+    opacity: 0;
+    transform : translateY(40px);
+    transition: all .45s ease;
+}
 
 .show {
+    opacity: 1;
     visibility:visible;
-    opacity:1;
     transform : translateY(0px);
 }
